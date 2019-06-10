@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        CHAT APP
+        <div id="messages"></div>
+        <form id="msg-form">
+            <input type="text" placeholder="message" style="width: 95%;
+            margin-top: 20px;
+            height: 25px;">
+            <button id="btn">Send</button>
+        </form>
+        <button id="send-location">Send Location</button>
+        <script id="message-template" type="text/html">
+            <div>
+                <p>This is message</p>
+            </div>
+        </script>
+        <!-- <button id="increment">+1</button> -->
+        <script src="/socket.io/socket.io.js"></script>
+        <!-- Client side version of the library .when we load this our client side javascript code will have access to all of the stuff from library it needs in order to set up the connection -->
+        <script src="./js/chat.js"></script>
+        <!-- Create our own javascript file ,load that in and use what provided in by above script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.7.0/qs.min.js.map"></script>
+    </body>
+</html>
