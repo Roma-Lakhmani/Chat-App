@@ -99,6 +99,8 @@ socket.on('locationMessage',(message)=>{
         createdAt:moment(message.createdAt).format('h:mm a')
     });    
     $messages.insertAdjacentHTML('beforeend',html);
+    autoscroll();
+
 })
 socket.on('roomData',({room,users})=>{
     const html=Mustache.render(sidebarTemplate,{
